@@ -2,12 +2,11 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import chat_app from "../../Assets/Projects/chat_app.png";
+import bankist from "../../Assets/Projects/BankistApp.png";
+import numGame from "../../Assets/Projects/NumberGame1.png";
+import news from "../../Assets/Projects/News_website.png";
+import old_portfolio from "../../Assets/Projects/portfolio_old.png";
 
 function Projects() {
   return (
@@ -23,68 +22,63 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={chat_app}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="MyChatApp"
+              description="A real-time messaging platform that enables users to send messages, share multimedia, and manage group chats. It uses React.js for the frontend, Node.js and Express.js for the backend, Socket.io for real-time communication, MongoDB for data storage, and JWT for authentication. The app ensures a seamless, responsive user experience."
+              ghLink="https://github.com/Vishvika/myChatApp"
+              demoLink="https://mychatapp-0qgt.onrender.com"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={chat_app}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Blog App"
+              description="A platform for users to read, write, and manage blog posts. The app features user authentication, the ability to create, update, and delete posts, and a clean, responsive design. Built with React for the frontend and MySQL for the backend, it offers a smooth and interactive blogging experience."
+              ghLink="https://github.com/Vishvika/BlogReduxProject"
+              demoLink="https://blog-redux-project.vercel.app/"
             />
           </Col>
-
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={bankist}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="The Bankist App"
+              description="It's a comprehensive banking application made using JavaScript that handles user authentication, account transactions, and UI updates."
+              ghLink="https://github.com/Vishvika/BankistApp"
+              demoLink="https://vishvika.github.io/BankistApp/"
             />
           </Col>
-
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={old_portfolio}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="Old Portfolio"
+              description="This eye-catching website was my previous personal portfolio, made using HTML, CSS, and Javascript."
+              ghLink="https://github.com/Vishvika/Portfolio"
+              demoLink="https://vishvika.github.io/Portfolio/"
             />
           </Col>
-
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={numGame}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+              title="Number Game"
+              description="Demonstrated proficiency in JavaScript programming, including functions for score incrementation, hit number generation, bubble panel creation, and timer management, showcasing problem-solving skills and an ability to create engaging user experiences."
+              ghLink="https://github.com/Vishvika/NumberGame"
+              demoLink="https://vishvika.github.io/NumberGame/"
             />
           </Col>
-
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={emotion}
+              imgPath={news}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              title="News Website"
+              description="A News website which gives latest news about India. This website Build using Plain Venila Javascript. Also it use Fatch API"
+              ghLink="https://github.com/Vishvika/News-Website-"
+              demoLink="https://vishvika.github.io/News-Website-/"
             />
           </Col>
         </Row>
